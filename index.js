@@ -147,6 +147,7 @@ const Game = {
 	startGame: function () {
 		Game.sounds.click.play();
 		Game.sounds.bgm.play();
+		Game.sounds.bgm.loop = true;
 
 		Composite.remove(engine.world, menuStatics);
 		Composite.add(engine.world, gameStatics);
